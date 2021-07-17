@@ -1,5 +1,5 @@
 
-import { ChatHandler, chat_names } from './ChatHandler.js';
+import { ChatHandler, chat_names } from './chatlist_script.js';
 
 onload = function () {
 

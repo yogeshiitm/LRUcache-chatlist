@@ -1,7 +1,3 @@
-/**
- * Created by aarnavjindal on 07/04/20.
- */
-
 export { ChatHandler, chat_names}
 
 const chat_names = [
