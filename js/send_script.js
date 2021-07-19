@@ -47,20 +47,6 @@ onload = function () {
 
     /*------------------------------- MESSAGE DELETED ---   ---------------------------------------*/
     delete1.onclick = function () {
-        // if(Math.random()>0.75 && chats.length > 0){
-        //     let index = Math.floor(Math.random()*chats.length);
-        //     let idToDelete = chats[index];
-        //     chatList.deleteMsg(idToDelete);
-        //     text.innerHTML = "Deleted message from "+chat_names[idToDelete] + "<br>" + text.innerHTML;
-        //         chats.splice(index, 1);
-        // } else{
-        //     let idOfMsg = Math.floor(Math.random()*7);
-        //     if(chats.includes(idOfMsg)===false){
-        //         chats.push(idOfMsg);
-        //     }
-        //     chatList.newMsg(idOfMsg);
-        //     text.innerHTML = "New message from "+chat_names[idOfMsg] + "<br>" + text.innerHTML;
-        // }
         chatList.deleteMsg(0);
         chats.splice(0, 1);
 
