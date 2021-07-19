@@ -47,8 +47,8 @@ class ChatList{
         // Setting name, message, image to template item
         chat_item.querySelector('#Name').innerText = chat_names[id%chat_names_length];
         chat_item.querySelector('#Message').innerText = chat_msg[id%chat_msg_length];
-        console.log("./images/avatar" + eval(1+(id%chat_img_length)) + ".png");
-        chat_item.querySelector('#Image').src = "./images/avatar" + eval(1+(id%chat_img_length)) + ".png";
+        console.log("./images/avatar" + eval(1+(id%chat_img_length)) + ".jpg");
+        chat_item.querySelector('#Image').src = "./images/avatar" + eval(1+(id%chat_img_length)) + ".jpg";
         node['chat_item'] = chat_item;
         return node;
     }
