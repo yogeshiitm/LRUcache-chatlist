@@ -1,21 +1,13 @@
-export { ChatHandler, chat_names}
+export { ChatList, chat_names}
 
-const chat_names = [
-    "Hritik", 
-    "Rahul", 
-    "Nishant", 
-    "Saksham",];
+const chat_names = ["Hritik", "Rahul", "Nishant", "Saksham",];
 const chat_names_length = chat_names.length;
-const chat_msg = [
-    "Why didn't he come and talk to me himse...",
-    "Perfect, I am really glad to hear that!...",
-    "This is what I understand you're telling me..",
-    "I’m sorry, I don’t have the info on that.."];
+const chat_msg = ["Hello","Hello","Hello","Hello"];
 const chat_msg_length = chat_msg.length;
-const chat_img_length = 7;
+const chat_img_length = 4;
 
-class ChatHandler{
-
+class ChatList{
+    /*---------------------------------------------------------------------------------------*/
     constructor(chat_template, chat_list){
         this.hashmap = new Map();
         this.linked_list = null;
@@ -26,6 +18,7 @@ class ChatHandler{
         this.mins = clock.getMinutes();
     }
 
+    /*---------------------------------- METHOD 1 : TIME OF MESSAGE ------------------------------*/
     getTime(){
         // Time Stamp creation for messages
         this.mins += 1;
@@ -41,6 +34,8 @@ class ChatHandler{
         return ("0" + this.hours).slice(-2)+":"+("0" + this.mins).slice(-2);
     }
 
+
+    /*-------------------------------- METHOD 2 : NEW MESSAGE NODE -----------------------------------*/
     createNode(id){
         // Creating node element
         let node = {};
@@ -58,6 +53,7 @@ class ChatHandler{
         return node;
     }
 
+    /*---------------------------------- METHOD 3 : ADD NEW KEY/MESSAGE ---------------------------------------*/
     newMsg(id){
         let node = null;
         if((id in this.hashmap ) === false){
@@ -82,6 +78,7 @@ class ChatHandler{
         this.updateList();
     }
 
+    /*------------------------------------- METHOD 4 : DELETE KEY/MESSAGE ---------------------------------*/
     deleteMsg(id){
         let node = this.getNodeFromList(id);
         // No use of node since it has been deleted
@@ -90,6 +87,7 @@ class ChatHandler{
         this.updateList();
     }
 
+    /*------------------------------------- METHOD 5 : RETRIEVE A KEY/MESSAGE -----------------------------*/
     getNodeFromList(id){
         let node = this.hashmap[id];
         let prevNode = node['prev'];
@@ -110,6 +108,7 @@ class ChatHandler{
         return node;
     }
 
+    /*------------------------------ METHOD 6: MOST RECENTLY ACCESSED KEY -------------------------------*/
     updateList(){
         // Update the contents of the chat list
         let innerHTML = '';
@@ -127,5 +126,4 @@ class ChatHandler{
         }
         this.chat_list.innerHTML = innerHTML;
     }
-
 }
