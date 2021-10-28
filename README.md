@@ -1,6 +1,6 @@
 # ChatList
 
-<a href="https://yogeshiitm.github.io/snake-game/"><img src="images/screenshot.png"></a>
+<a href="https://yogeshiitm.github.io/chatlist/"><img src="images/screenshot.png"></a>
 
 - Chat list application using Least Recently Used (LRU) Cache class. 
 - Used Linked list and HashMap Data structures to develop the caching system. 
