@@ -104,31 +104,8 @@ input[type=submit] {
     margin: 0 auto;
 }
 
-#container1{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    margin: 0 auto;
-}
 
-.container2 {
-    width: 50%;
-    height: 100%;
-    /*border: 1px solid lightgray;*/
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-.container3 {
-    width: 50%;
-    height: 100%;
-    /*border: 1px solid lightgray;*/
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
+/*----------------------------------------- CHAT LIST TEMPLATE --------------------------------------*/
 .ks-messenger {
     margin: auto;
     margin-top: 50px;
