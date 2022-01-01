@@ -9,6 +9,11 @@ body {
     box-sizing: border-box;
 }
 
+.hrefWithoutDecoration {
+    text-decoration: none !important;
+    color: white !important;
+}
+
 /*the container must be positioned relative:*/
 .autocomplete {
     position: relative;
